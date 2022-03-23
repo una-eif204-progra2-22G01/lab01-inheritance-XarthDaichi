@@ -4,6 +4,8 @@
 
 #include "Derived2.h"
 
+Derived2::Derived2() : Base(0) {}
+
 Derived2::Derived2(int test) : Base(test) {}
 
 Derived2::~Derived2() {}

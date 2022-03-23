@@ -10,9 +10,11 @@
 #define LAB01_INHERITANCE_DERIVED1_H
 
 
-class Derived1 : Base {
+class Derived1 final : public Base {
 private:
 public:
+    Derived1();
+
     Derived1(int test);
 
     virtual ~Derived1();

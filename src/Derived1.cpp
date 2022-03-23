@@ -3,6 +3,7 @@
 //
 
 #include "Derived1.h"
+Derived1::Derived1() : Base(0) {}
 
 Derived1::Derived1(int test) : Base(test) {}
 
