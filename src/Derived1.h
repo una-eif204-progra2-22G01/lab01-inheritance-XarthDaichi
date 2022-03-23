@@ -1,4 +1,6 @@
 #pragma once
+
+#include <ostream>
 #include "Base.h"
 //
 // Created by Xarthy on 0015 March 15, 2022.
@@ -15,7 +17,9 @@ public:
 
     virtual ~Derived1();
 
-    void do_something();
+    void do_something() override;
+
+    friend std::ostream &operator<<(std::ostream &os, const Derived1 &derived1);
 };
 
 

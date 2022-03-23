@@ -14,3 +14,8 @@ int Base::getTest() const {
 void Base::setTest(int test) {
     Base::test = test;
 }
+
+std::ostream &operator<<(std::ostream &os, const Base &base) {
+    os << "test: " << base.test;
+    return os;
+}

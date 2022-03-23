@@ -11,3 +11,8 @@ Derived2::~Derived2() {}
 void Derived2::do_something() {
     std::cout << "Derived2!!!" << std::endl;
 }
+
+std::ostream &operator<<(std::ostream &os, const Derived2 &derived2) {
+    os << static_cast<const Base &>(derived2);
+    return os;
+}

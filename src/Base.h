@@ -21,6 +21,8 @@ public:
     void setTest(int test);
 
     virtual void do_something() = 0;
+
+    friend std::ostream &operator<<(std::ostream &os, const Base &base);
 };
 
 
